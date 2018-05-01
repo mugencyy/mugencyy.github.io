@@ -1,0 +1,257 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------- Top Navigation ---------- */
+
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+.navflex {
+    display: flex;
+    background-color: white;
+    /*justify-content: space-between; */
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25); 
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+    position: absolute;
+    flex-wrap: nowrap;
+}
+#navlist a, #login a {
+    color: black;
+    font-size: 14px;
+}
+#logo {
+    margin: 20px 0 18px 25px;
+    color: #282D5E;
+    font-size: 24px;
+    order: 0;
+    font-family: "Raleway";
+    font-style: extra-bold;
+}
+#navlist {
+    margin: 23px 0 20px 35px;
+    font-family:"Lato";
+    font-weight: 300;
+    flex:1;
+}
+#login {
+    margin: 23px 65px 20px 0;
+    font-family:"Lato";
+    font-weight: 300;
+   
+}
+#whatson {
+    
+    order: 1;
+    padding: 30px;
+}
+#gamedevs {
+    padding: 30px;
+    order: 2;
+}
+#aboutus {
+    padding: 30px;
+    order: 3;
+}
+#contact {
+    padding: 30px;
+    order: 4;
+}
+#signin {
+    order: 5;
+    padding: 32px;
+}
+#register {   
+    order: 7;
+    padding: 33px;
+    border-left: 1px solid #E8E8E8;
+    line-height: 5px;
+}
+#signin:hover, #register:hover, #whatson:hover, #gamedevs:hover, #aboutus:hover, #contact:hover {
+    background-color: rgba(160, 150, 207, 0.425);
+}
+
+.wrapper { 
+    margin: 71px auto;
+}
+/* ------ Page Cover ------- */
+
+#pagecover {
+    top: 71px;
+    /*position: relative;*/
+    text-align: center;
+}
+img {
+    min-width: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+#maineventinfo {
+    
+    bottom: 32px;
+    left: 30px;
+    text-align: left;
+}
+
+.monthshort a, .date a {
+    color: #B86923;
+    font-size: 18px;
+    font-family: "Lato";
+    font-weight: 300;
+}
+
+.developername a {
+    color: black;
+    font-size: 18px;
+    font-family: "Lato";
+    font-weight: 300;
+}
+
+.gamename a {
+    color: #666666;
+    font-size: 18px;
+    font-family: "Lato";
+    font-weight: 300;
+}
+
+
+/* ------ Events ----- */
+.events {
+    display: flex;
+    margin-top: 22px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.eventcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 14.5px;
+}
+.eventinfocontainer {
+    display: flex;
+    padding-top: 12px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.eventdate {
+    padding-right: 14px;
+}
+.events img {
+    margin-top: 65px;
+    padding: 0 14.5px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Page Selection */
+.pageselection {
+    text-align: center;
+    margin-top: 70px;
+    font-family:"Lato";
+    font-weight: 300;
+}
+
+.pageselection a {
+    margin: 0 10px;
+}
+
+@media all and (max-width: 800px){
+    .events {
+        justify-content: space-around;
+    }
+    .events a {
+        padding: 0;
+    }
+}
+
+/*-------------- Footer -------------*/
+.footer {   
+    margin-top: 40px;
+    background-color: #141414;
+    text-align: center;
+    height: 221px;
+}
+.footer img {
+    margin: auto;
+    margin-top: 50px;
+}
+.logo {
+    margin-top:20px;
+}
+.logo a{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    order: 0;
+    font-family: "Raleway";
+    font-style: extra-bold;
+}
+
+.copyright {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-family: "Raleway";
+    color: white;
+    
+}
+
+.footer hr {
+    margin-top: 17px;
+     border: 0;
+     height: 0;
+     border-top: 1px solid rgba(255, 255, 255, 0.57);
+     
+}
+
+/*--------- Mobile Optimization ---------*/
+@media all and (max-width: 950px) {
+    .events {
+        flex-direction: column;
+    }
+    .events a {
+        padding: 0;
+    }
+}
+
+
+@media all and (max-width: 950px){   
+    .navflex { flex-direction: column; height: auto; position:absolute; padding: 0; margin: 0;}
+    #logo { flex-direction: column; text-align: center; align-content:center; margin:0;}
+    #navlist, #login { display: flex; text-align:center; align-items: center; flex: none; margin: 0; padding: 0;}
+    #whatson { border-right: 1px solid #E8E8E8; line-height: 10px;}
+    #gamedevs { border-right: 1px solid #E8E8E8; line-height: 10px;}
+    #aboutus { border-right: 1px solid #E8E8E8; line-height: 10px;}
+    
+    #navlist a , #login a{ margin: 0; padding: 10px; width: 100%;}
+    #pagecover { display: flex; flex-direction: column;}
+    #pagecover img {top: 37px; position: relative; order: 0;}
+    .events {top: 150px; position: relative;}
+    #maineventinfo { position: relative; padding: 0; margin: 0; left:15px; bottom: 0; order: 1;}
+    .events { align-items: center; position: relative; top: 50px; max-width: 100%; height: auto;}
+    .events img {max-width: 100%; height: auto; margin:20px;}
+    /*#pagecover { position: absolute; text-align: center; display:flex; flex-direction: column; margin:0; padding: 0;}
+    #pagecover img { order: 0; padding: 0; margin: 0;}
+    #maineventinfo {order:1; padding: 0; margin: 0; position: absolute;}
+    
+    /*#whatson, #gamedevs, #aboutus, #contact { flex-direction: column; text-align: center; align-content: center; margin:0;}*/
+   
+}
+
+

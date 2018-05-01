@@ -1,0 +1,94 @@
+html {
+    font-family: "Raleway";
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    min-width:300px;
+    min-height:auto;
+}
+
+#splash {
+    height:100%;
+    width:100%;
+    background-color: white;
+    position: absolute;
+    background-image: url(../assets/logoblue.png);
+    opacity: 0;
+    background-size: 256px 288px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ------------------ Hero Image -----------------*/
+#wrapper {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(250, 227, 227);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+/* ------- Footer ------*/
+#footer {
+    background-color: #282D5E;
+    height: 200px;
+}
+
+#footer img {
+    height: 80px;
+    width: 71px;
+    margin: 60px auto;
+    display: block;
+    
+}
+
+
+/* ------- Mobile Optimization -----*/
+
+@media all and (max-width:1050px) {
+    #subcontent {
+        flex-flow: row wrap;
+        align-content: center;
+    }
+    .square {
+        flex-basis:50%;
+    }
+    
+}
+
+
+@media all and (max-width:668px) {
+    #subcontent a {
+        font-size: 30px;
+    }
+
+    #desktopHeroImage {
+        display: none;
+    }
+
+    #mobileHeroImage {
+        display: block;
+    }
+}
+
+
+@media all and (max-width:422px) {
+    #subcontent a {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sidenav a {font-size: 18px; padding: 20px;}
+    
+}

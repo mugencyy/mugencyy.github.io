@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko-KR">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Description" content=""/>
+    <meta name="Keywords" content="Harry Kwok, Moonhan Kwak, Portfolio" />
+
+    <title>Harry Kwok │ 곽문한</title>
+
+    <!-- ✩ styles ✩-->
+    <link href="../styles/normalize.css" type="text/css" rel="stylesheet"/>
+    <link href="../styles/about.css" type="text/css" rel="stylesheet"/>
+    <link href="../styles/sidenav.css" type="text/css" rel="stylesheet"/>
+
+    <!-- ✩ javascript ✩ -->
+    <script src="../scripts/about.js"></script>
+    <script src="../scripts/sidenav.js"></script>
+
+    <!-- ✩ fonts ✩ -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700" rel="stylesheet"/> 
+</head>
+
+<body class="fixed" onscroll="scroll()">
+    <!-- ✩ Side Navigation ✩ -->
+
+    <div id="splash"></div> 
+    <header>
+            <div id="SideNav" class="sidenav">
+                <a id="link1" style="visibility: hidden;" onmouseover="navHover(this.id)" onmouseleave="navHoverLeave(this.id)" class="link" href="home.html">HOME</a>
+                <a id="link4" style="visibility: hidden;" onmouseover="navHover(this.id)" onmouseleave="navHoverLeave(this.id)" class="link" href="about.html">ABOUT</a>
+                <a id="link2" style="visibility: hidden;" onmouseover="navHover(this.id)" onmouseleave="navHoverLeave(this.id)" class="link" href="skills.html">SKILLS</a>
+                <a id="link3" style="visibility: hidden;" onmouseover="navHover(this.id)" onmouseleave="navHoverLeave(this.id)" class="link" href="works.html">WORKS</a>
+                <a id="link5" style="visibility: hidden;" onmouseover="navHover(this.id)" onmouseleave="navHoverLeave(this.id)" class="link" href="#">CONTACT</a>
+            </div>
+            
+    </header>
+    
+    <a onclick="navInteraction()" id="navButton" href="javascript:void(0)"><img alt="Navigation Button" id="navButtonImg" src="../assets/sidenavBlue.png"></a>
+        
+
+    <div id="wrapper" onclick="exitNav()">
+        <div id="content">
+            
+                <img id="desktopHeroImage" src="../assets/aboutme.png" alt="Hero Image">
+                <img id="mobileHeroImage" src="../assets/mobileAboutHeroImage.png" alt="Mobile Hero Image">
+            
+
+            <div id="subcontent">
+                <div id="aboutmeImage" class="contentDescription"></div>
+                <div id="aboutmeBox" class="contentDescription">
+                    <div class="content">
+                        <div id="aboutmeTitle" class="contentTitle">About me</div>
+                        <div id="aboutmeContent" class="description">I am from Hong Kong and studied in the United Kingdom for over 8 years and recently studied in UX Design in the Netherlands.<br><br>
+                                Studing UX gave me a lot of experience in creating real products, understanding the psychology behind UX Patterns. I learnt and understood the research process, creative process, business aspects, wireframing and also prototyping.<br><br>
+                                Overall, I was exposed to a very international environment since young where I studied in an International School, then in a Scottish Private Boarding school, proceeded to study in UK Universities and Netherlands. I have also worked with many people of all kinds of backgrounds and skills.<br><br>
+                                I am willing to learn, enthusiastic in design, and striving to be even better than ever and it would be great to meet you, work with you, or just have a chat!
+                        </div>
+                    </div>
+                </div>
+                <div id="experiencesBox" class="contentDescription">
+                    <div class="content">
+                        <div class="contentTitle">Experiences</div>
+                        <div id="experiencesContent" class="description"><span class="date">June 2017 - September 2017</span><br>
+                                BoBuy, Hong Kong - User Experience Design and Marketing Intern
+                                Help redesign their app interface (Visual Design).
+                                Worked with the marketing team, creating creative marketing ideas.
+                                Provided expert analysis on UX aspects.<br><br>
+                                <span class="date">March  2017 - April 2017</span><br>
+                                Lille Animation Festival, Lille - Animator
+                                Worked as an animator with international professionals, where I was in charge of the keyframes, storyboard and animation.<br><br>
+                                <span class="date">September 2014 - December  2014</span><br>
+                                Seoul Plaza, Cambridge - Store Staff
+                                Worked with the staff team in the Cambridge branch, helping with restocking and sales.
+                                </div>
+                    </div>
+                </div>
+                <div id="experiencesImage" class="contentDescription"></div>
+            </div>
+        </div>
+        <div id="footer">
+                <a href="home.html"><img src="../assets/logowhite.png" alt="Footer Logo"></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+html {
+    font-family: "Raleway";
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    min-width:300px;
+    min-height:auto;
+    background: #F2994A;
+    
+}
+
+#splash {
+    height:100%;
+    width:100%;
+    background-color: #F2994A;
+    position: absolute;
+    background-image: url(../assets/logoblue.png);
+    opacity: 0;
+    background-size: 256px 288px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* -- Hero Image --*/
+#wrapper {
+    display: none;
+    flex-direction: column;
+    background-color: #F2994A;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+}
+
+
+#desktopHeroImage {
+    max-width: 100%;
+    margin-bottom: 0;
+    font-size:0;
+    opacity: 0;
+}
+
+#mobileHeroImage {
+    display: none;
+    max-width: 100%;
+}
+
+
+
+/* --- Content ---*/
+
+#subcontent {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+    background-color:#F2994A;
+}
+
+.contentDescription {
+    text-align: center;
+    width: 50%;
+    flex: 1 0 50%;    
+    height: auto;
+    min-height: auto;
+    transition: 0.8s;
+    opacity: 0;
+}
+
+.contentDescription:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+}
+
+#aboutmeBox, #experiencesBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#aboutmeImage {
+    background-image: url(../assets/aboutmeImage.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#experiencesImage {
+    background-image: url(../assets/experiencesImage.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.content {
+    max-width: 58%;
+    line-height: 21px;
+    font-size: 18px;
+    margin: 50px;
+}
+
+.description {
+    text-align: left;
+}
+.contentTitle {
+    font-family: "Raleway";
+    font-weight: 600;
+    color: #282D5E;
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.date {
+    font-size: 16px;
+    color: #828282;
+}
+
+/* -- Footer --*/
+
+#footer {
+    background-color: #282D5E;
+    height: 200px;
+}
+
+#footer img {
+    height: 80px;
+    width: 71px;
+    margin: 60px auto;
+    display: block;
+}
+
+/* -- Responsive Design --*/
+
+@media all and (max-width:1510px) {
+    .content {max-width: 70%;}
+}
+@media all and (max-width: 1280px) {
+    .content {max-width: 80%;}
+    .contentTitle{margin-bottom: 50px;}
+}
+@media all and (max-width: 1200px) {
+    .content {font-size: 16px;}
+    .date {font-size: 12px;}
+    .contentTitle {font-size: 22px;}
+    .contentTitle{margin-bottom: 40px;}
+}
+@media all and (max-width: 1122px){
+    .contentTitle {margin-bottom: 30px;}
+}
+
+@media all and (max-width: 1100px){
+    .contentTitle {margin-bottom: 20px;}
+    .content {font-size: 14px;}
+    .date {font-size: 10px;}
+}
+@media all and (max-width: 1042px) {
+    .contentTitle { font-size: 20px;}
+    .content {font-size: 12px;}
+}
+@media all and (max-width:668px) {
+    #subcontent {flex-direction: column; flex-wrap: nowrap;}
+    .contentDescription {width: 100%;}
+    #aboutmeImage {order: 0;}
+    #aboutmeBox {order: 1;}
+    #experiencesImage {order: 2;}
+    #experiencesBox {order: 3;}
+    
+    #subcontent a {font-size: 30px;}
+    #desktopHeroImage {display: none;}
+    #mobileHeroImage {display: block;}
+}
+@media screen and (max-width: 450px) {
+    .sidenav a {font-size: 18px; padding: 20px;}
+}

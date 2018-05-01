@@ -1,0 +1,222 @@
+html {
+    font-family: "Raleway";
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    min-width:300px;
+    min-height:auto;
+    background-color: #282D5E;
+}
+
+/*--- Splash ---*/
+/*@keyframes splash {
+    from {background-image: url(../assets/logoblue.png);}
+    to {background-image: url(../assets/logowhite.png);}
+}
+
+@keyframes splashExit {
+    from {opacity: 1;}
+    to {opacity: 0;};
+}
+*/
+
+#splash {
+    height:100%;
+    width:100%;
+    background-color: #282D5E;
+    position: absolute;
+    background-image: url(../assets/logowhite.png);
+    opacity: 0;
+    background-size: 256px 288px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ------------------ Hero Image -----------------*/
+#wrapper {
+    display: none;
+    flex-direction: column;
+    background-color: #282D5E;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+}
+
+#desktopHeroImage {
+    max-width: 100%;
+    opacity: 0;
+    /*height: 100%;*/
+    margin-bottom: 0;
+    font-size:0;
+}
+
+#mobileHeroImage {
+    display: none;
+    max-width: 100%;
+}
+#subcontent {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: opacity 1.5s ease-in-out;
+    
+    
+}
+
+/* ----- Content Thumbnails ----*/
+
+.subcontentTitle {
+    padding-top: 10px;
+    transition: 1s;
+}
+
+
+.square {
+    flex: 1 0 250px;    
+    height: auto;
+    min-height: auto;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    opacity: 0;
+    
+
+}
+.square:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+}
+
+
+#about {
+    background-image: url(../assets/about.png);
+    background-position: center;
+    background-size: 100%;
+}
+about:hover {
+    animation: hover 300ms ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+#skills {
+    background-image: url(../assets/skills.png);
+    background-position: center;
+    background-size: 100%;
+   
+    
+    
+}
+skills:hover {
+    background-image: url(../assets/skillsHover.png);
+}
+
+#works {
+    background-image: url(../assets/works.png);
+    background-position: center;
+    background-size: 100%;
+    
+    
+}
+works:hover {
+    background-image: url(../assets/worksHover.png);
+}
+
+#contact {
+    background-image: url(../assets/contact.png);
+    background-position: center;
+    background-size: 100%;
+    
+}
+contact:hover {
+    background-image: url(../assets/contactHover.png);
+    
+}
+
+#subcontent a {
+    text-decoration: none;
+    text-shadow: 0 2px 5px#282D5E;
+    font-size: 42px;
+    font-weight: 600;
+    color: white;
+}
+
+.subcontentTitle {
+    text-align: center;
+}
+
+.subcontentDescription {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 400;
+    margin: auto 10px;
+    text-shadow: none;
+    color: white;
+}
+
+
+#footer {
+    background-color: #282D5E;
+    height: 200px;
+}
+
+#footer img {
+    height: 80px;
+    width: 71px;
+    margin: 60px auto;
+    display: block;
+    
+}
+ /* ------- Mobile Optimization -----*/
+
+@media all and (max-width:1050px) {
+    #subcontent {
+        flex-flow: row wrap;
+        align-content: center;
+    }
+    .square {
+        flex-basis:50%;
+    }
+    
+}
+
+
+@media all and (max-width:668px) {
+    #subcontent a {
+        font-size: 30px;
+    }
+
+    #desktopHeroImage {
+        display: none;
+    }
+
+    #mobileHeroImage {
+        display: block;
+    }
+}
+
+
+@media all and (max-width:422px) {
+    #subcontent a {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sidenav a {font-size: 18px; padding: 20px;}
+    
+}
+
+

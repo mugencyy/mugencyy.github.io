@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko-KR">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Description" content=""/>
+    <meta name="Keywords" content="Harry Kwok, Moonhan Kwak, Portfolio" />
+
+    <title>Harry Kwok │ 곽문한</title>
+
+    <!-- ✩ styles ✩-->
+    <link href="../styles/normalize.css" type="text/css" rel="stylesheet"/>
+    <link href="../styles/works.css" type="text/css" rel="stylesheet"/>
+    <link href="../styles/sidenav.css" type="text/css" rel="stylesheet"/>
+
+    <!-- ✩ javascript ✩ -->
+    <script src="../scripts/works.js"></script>
+    <script src="../scripts/sidenav.js"></script>
+
+    <!-- ✩ fonts ✩ -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700" rel="stylesheet"/> 
+
+
+</head>
+
+
+
+<body class="fixed" onscroll="scroll()">
+    <!-- ✩ Side Navigation ✩ -->
+    <div id="splash"></div>
+    <header>
+            <div id="SideNav" class="sidenav">
+                <a id="link1" style="visibility: hidden;" onmouseover="navHover(this.id)" onmouseleave="navHoverLeave(this.id)" class="link" href="home.html">HOME</a>
+                <a id="link4" style="visibility: hidden;" onmouseover="navHover(this.id)" onmouseleave="navHoverLeave(this.id)" class="link" href="about.html">ABOUT</a>
+                <a id="link2" style="visibility: hidden;" onmouseover="navHover(this.id)" onmouseleave="navHoverLeave(this.id)" class="link" href="skills.html">SKILLS</a>
+                <a id="link3" style="visibility: hidden;" onmouseover="navHover(this.id)" onmouseleave="navHoverLeave(this.id)" class="link" href="works.html">WORKS</a>
+                <a id="link5" style="visibility: hidden;" onmouseover="navHover(this.id)" onmouseleave="navHoverLeave(this.id)" class="link" href="#">CONTACT</a>
+            </div>
+            
+    </header>
+
+        <a onclick="navInteraction()" id="navButton" href="javascript:void(0)"><img alt="Navigation Button" id="navButtonImg" src="../assets/sidenavBlue.png"></a>
+
+    <!-- ✩ Div Wrapper ✩ -->
+    <div id="wrapper" onclick="exitNav()">
+        <div id="content">
+            <img id="desktopHeroImage" src="../assets/desktopWorksHeroImage.png" alt="Hero Image">
+            <img id="mobileHeroImage" src="../assets/mobileWorksHeroImage.png" alt="Mobile Hero Image">
+        
+            <div id="subcontent">
+                <a onmouseover="hoverDescription(this.id)" onmouseleave="hoverLeave(this.id)" id="number" class="square" href="number.html">
+                    <div id="numberTitle" class="subcontentTitle">THINK OF A <br>NUMBER</div>
+                </a>
+                <a onmouseover="hoverDescription(this.id)" onmouseleave="hoverLeave(this.id)" id="hangman" class="square" href="hangman.html">
+                    <div id="hangmanTitle" class="subcontentTitle">HANGMAN</div>
+                </a>
+                <a onmouseover="hoverDescription(this.id)" onmouseleave="hoverLeave(this.id)" id="fishtank" class="square" href="works.html">
+                    <div id="fishtankTitle" class="subcontentTitle">FISH TANK<br>GAME</div>
+                </a>
+                <a onmouseover="hoverDescription(this.id)" onmouseleave="hoverLeave(this.id)" id="animation" class="square" href="#">
+                    <div id="animationTitle" class="subcontentTitle">ANIMATION</div>
+                </a>
+            </div>
+        </div>
+        <div id="footer">
+            <a href="#"><img src="../assets/logowhite.png" alt="Footer Logo"></a>
+        </div>
+        
+    </div>
+        
+        
+
+        
+
+</body>
+
+</html>
+
+<!-- 
+onmouseover="hoverDescription(this.id)" onmouseleave="hoverLeave(this.id)"
+onmouseover="hoverDescription(this.id)" onmouseleave="hoverLeave(this.id)"
+onmouseover="hoverDescription(this.id)" onmouseleave="hoverLeave(this.id)"
+onmouseover="hoverDescription(this.id)" onmouseleave="hoverLeave(this.id)"
+-->
+

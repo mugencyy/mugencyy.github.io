@@ -1,0 +1,55 @@
+
+/* ------------------------- Side Nav ------------------*/
+
+.sidenav {
+    
+    width: 150px; 
+    position: fixed; 
+    top:25px; 
+    left: 10px;
+    background-color: rgba(255,255,255,0.7);
+    height: 0; 
+    overflow-x: hidden; 
+    overflow-y: hidden;    
+    transition: 0.7s; 
+    text-align: center;
+    box-shadow: 0 1px 20px black;
+}
+
+
+#navButtonImg {
+    
+    margin-left: 10px;
+    height: 30px;
+    position: fixed;
+    top: 10px;
+    transition: 0.8s;
+}
+
+.sidenavClose {
+    height: 30px;
+}
+
+
+/* ----------------------- Nav Links ------------------- */
+sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #282D5E;
+    font-weight: bold;
+    display: block;
+    
+    
+}
+
+.sidenav a {    
+    visibility: hidden;
+    padding: 17px 0;
+    text-decoration: none;
+    font-size: 20px;
+    color: #282D5E;
+    display: block;
+    text-align: center;
+    text-shadow: 0 1px 10px rgba(40,45,94,0.5);
+}
