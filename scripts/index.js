@@ -20,7 +20,7 @@ function hoverDescription(hover_id) {
     var x = document.getElementById(hover_id);
     var x2 = document.getElementById(hover_id + "Title");
     var x3 = document.getElementById(hover_id + "Description");
-    var y = "url(../assets/" + hover_id + "Hover.png)";
+    var y = "url(assets/" + hover_id + "Hover.png)";
     x.style.backgroundImage = y;
     x.style.transitionDelay = "0ms";
     x2.style.visibility = "hidden";
@@ -33,7 +33,7 @@ function hoverDescription(hover_id) {
 
 function hoverLeave(hover_id) {
     var x = document.getElementById(hover_id);
-    let y = "url(../assets/" + hover_id + ".png";    
+    let y = "url(assets/" + hover_id + ".png";    
     x.style.backgroundImage = y
     var x2 = document.getElementById(hover_id + "Title");
     x2.style.visibility = "visible";
