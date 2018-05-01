@@ -23,7 +23,7 @@ html {
 #wrapper {
     display: none;
     flex-direction: column;
-    background-color: rgb(250, 227, 227);
+    background-color: #282D5E;
 }
 
 #content {
@@ -38,8 +38,10 @@ html {
 }
 
 #programBox {
-    height: 50%;
-    width: 60%;
+    height: 90%;
+    max-height: 80%;
+    max-width: 80%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +177,9 @@ html {
     
 }
 
+@media all and (max-height:600px) {
 
+}
 @media all and (max-width:668px) {
     #subcontent a {
         font-size: 30px;
