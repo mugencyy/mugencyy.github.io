@@ -29,6 +29,7 @@ html {
 }
 
 #content {
+    display: -webkit-flex;     
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -71,6 +72,7 @@ html {
     height: 350px;
     width: 100%;
     color: white;
+    display: -webkit-flex;     
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,6 +96,7 @@ html {
 
 #icons {
     margin-bottom: 30px;
+    display: -webkit-flex;     
     display: flex;
     order: 0;
 }

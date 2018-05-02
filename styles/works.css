@@ -27,6 +27,7 @@ html {
 }
 
 #content {
+    display: -webkit-flex;     
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -52,7 +53,7 @@ html {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
+    display: -webkit-flex;    
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -159,6 +160,7 @@ animation:hover {
     height: 350px;
     width: 100%;
     color: white;
+    display: -webkit-flex;     
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,6 +184,7 @@ animation:hover {
 
 #icons {
     margin-bottom: 30px;
+    display: -webkit-flex;     
     display: flex;
     order: 0;
 }

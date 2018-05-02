@@ -32,6 +32,7 @@ a {
 }
 
 #caption {
+    display: -webkit-flex;     
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +51,7 @@ a {
 #content {
     padding: 0;
     margin: 0;
+    display: -webkit-flex;     
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -67,6 +69,7 @@ a {
 }
 
 #information {
+    display: -webkit-flex;     
     display: flex;
     background-color: #282D5E;
     justify-content: flex-end;
@@ -76,8 +79,9 @@ a {
     background-color: #282D5E;
 }
 
-#infoContainer {
-    display:flex;
+#infoContainer {    
+    display: -webkit-flex;     
+    display: flex;
     flex-direction: column;
     width: 50%;
     margin-right: 10%;
@@ -89,8 +93,9 @@ a {
     color:white;
     margin: 30px 0;
 }
-.icon {
-    display:flex;
+.icon {    
+    display: -webkit-flex;     
+    display: flex;
     align-self: flex-start;
     margin: 5px 0;
     justify-content: flex-start;
@@ -130,11 +135,13 @@ address {
 }
 
 #contactForm {
+    display: -webkit-flex;     
     display: flex;
     flex-direction: column;
 }
 
 #field {
+    display: -webkit-flex;     
     display: flex;
     flex-direction: column;
     height:100%;
@@ -196,6 +203,7 @@ address {
     height: 350px;
     width: 100%;
     color: white;
+    display: -webkit-flex;     
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,6 +228,7 @@ address {
 
 #icons {
     margin-bottom: 30px;
+    display: -webkit-flex;     
     display: flex;
     order: 0;
 }
