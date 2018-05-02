@@ -7,9 +7,13 @@ html {
     min-height:auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 #splash {
     height:100%;
-    width:100%;
+    width:100vw;
     background-color: #282D5E;
     position: absolute;
     background-image: url(../assets/logowhite.png);
@@ -24,15 +28,169 @@ html {
     display: none;
     flex-direction: column;
     background-color: #282D5E;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    justify-content: space-around;
 }
 
-#container {
+#caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 40px;
+}
+
+#caption h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 30px;
+}
+
+#content {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#information, #contactForm {
+    width: 40%;
+    height: auto;
+}
+
+#information:before{
+    content:"";
+    float:left;
+    padding-top: 70%;
+}
+
+#information {
+    display: flex;
+    background-color: #282D5E;
+    justify-content: flex-end;
+}
+
+#contactForm {
+    background-color: #282D5E;
+}
+
+#infoContainer {
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 10%;
+}
+
+#infoCaption {
+    font-size: 28px;
+    font-weight: 600;
+    color:white;
+    margin: 30px 0;
+}
+.icon {
+    display:flex;
+    align-self: flex-start;
+    margin: 5px 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+address {
+    margin-top: 5px;
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+}
+
+#emailBox img {
+    height: 25px;
+    width: 39px;
+    margin-right: 10px;
+}
+
+#linkedinBox address{
+    margin-top: 10px
+}
+#linkedinBox img {
+    height: 41px;
+    width: 39px;
+    margin-right: 10px;
+}
+
+#locationBox img {
+    height: 45px;
+    width: 39px;
+    margin-right: 10px;
+}
+#locationBox p{
+    color: white;
+    margin-top: 10px;
+}
+
+#contactForm {
     display: flex;
     flex-direction: column;
-    flex: 1;
+}
+
+#field {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    border:0;
+    border-left: 1px solid rgba(255, 255, 255, 0.74);
+}
+
+#name {
+    width:80%;
+    margin:10px 10%;
+    padding: 5px;
+    height:30px;
+    border:0;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px white;
+}
+
+#email {
+    width:80%;
+    margin:10px 10%;
+    padding: 5px;
+    height:30px;
+    border:0;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px white;
+}
+
+#message {
+    width:80%;
+    margin:10px 10%;
+    padding: 5px;
+    min-height:100px;
+    border:0;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px white;
+}
+
+#submit {
+    width:82%;
+    margin:10px 8% 10px 10%;
+    padding: 5px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    background-color: #f2994a;
+    height:30px;
+    box-shadow: 0 1px 10px white;
+}
+
+
+
+/*#container {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     min-width: 70%;
     margin: auto 15%;
@@ -43,9 +201,98 @@ html {
    
 }
 
+
+
+#content {
+    display: flex;
+    width: 100%;
+    min-height: 70%;
+}
+
+#information {
+    align-self: flex-start;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#information h4 {
+    margin: 30px 10%;
+    font-size: 30px;
+}
+
+#contactForm {
+    border-left: 1px solid #bdbdbd;
+    width: 50%;
+    min-height: 80%;
+    padding: auto 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nameInput, #emailInput, #messageInput, #submit {
+    margin: 10px 20px;
+    flex-grow: 1;
+}
+
+#nameInput, #emailInput {
+    padding: 5px;
+    border-radius: 3px;
+    border:0;
+    min-height: 30px;
+    max-width: 90%;
+    margin: 10px 5%;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.253);
+}
+#messageInput {
+    padding: 5px;
+    border-radius: 3px;
+    border:0;
+    min-width: 90%;
+    min-height:50%;
+    margin: 10px 5%;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.253);
+}
+#submit {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.253);
+    background-color: #f2994a;
+    border: 0;
+    border-radius: 5px;
+    min-width: 92%;
+    padding: 10px 0;
+    right: 0;
+    margin: 10px 3% 10px 5%;
+    
+}
+#contactForm form {
+    height: 100%;
+    width: 100%;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    border: 0;
+}
+
+#contact input {
+    min-width: 90%;
+}
+
 #container h3 {
     font-size: 30px;
-    align-self: flex-start;
+    align-self: center;
     margin: 30px 10%;
 }
 
@@ -59,6 +306,7 @@ html {
 a {
     text-decoration: none;
 }
+
 address {
     margin-top: 5px;
     text-decoration: none;
@@ -87,7 +335,7 @@ address {
     width: 28px;
     margin-right: 20px;
 }
-
+*/
 /* ------- Footer ------*/
 #footer {
     background-color: #282D5E;
@@ -99,6 +347,7 @@ address {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 #footer img {
@@ -137,36 +386,31 @@ address {
 
 
 /* ------- Mobile Optimization -----*/
-
-@media all and (max-width:1050px) {
-    #subcontent {
-        flex-flow: row wrap;
-        align-content: center;
-    }
-    .square {
-        flex-basis:50%;
-    }
-    
+@media all and (max-width: 1500px) {
+    #infoContainer {margin-right: 20%;}
+}
+@media all and (max-width: 1185px) {
+    #infoContainer {margin-right: 40%;}
 }
 
-@media all and (max-height:600px) {
-
-}
-@media all and (max-width:668px) {
-    #subcontent a {
-        font-size: 30px;
-    }
-
-    #desktopHeroImage {
-        display: none;
-    }
-
-    #mobileHeroImage {
-        display: block;
-    }
+@media all and (max-width: 820px) {
+    #information, #contactForm {width: 50%;}
 }
 
-
+@media all and (max-width: 643px) {
+    #infocaption, .icon {margin-left:5%; margin-right: 5%;}
+    #wrapper {flex-wrap: wrap;}
+    #content {flex-direction: column;}
+    #infoCaption {align-self: center; margin: 10px auto;}
+    #contactForm {width:100%; text-align: center;}
+    #infoContainer {margin:auto; width:80%; justify-content: center; align-items: center;}
+    #information:before {padding-top:40%;}
+}
+@media all and (max-width: 620px) {
+    #wrapper {flex-wrap: wrap;}
+    #content {flex-direction: column;}
+    #information, #contactForm {width:100%;}
+}
 @media all and (max-width:422px) {
     #subcontent a {
         font-size: 30px;
